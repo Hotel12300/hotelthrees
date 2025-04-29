@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - Hotel Three S</title>
+  <style>
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 15px 30px;
+      text-align: center;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    h2 {
+      text-align: center;
+      color: #003366;
+      margin-top: 20px;
+    }
+    .contact-info {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .contact-form {
+      max-width: 600px;
+      background: white;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .contact-form label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+      color: #003366;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .contact-form button {
+      background-color: #003366;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 20px;
+      width: 100%;
+      font-size: 1rem;
+    }
+    .contact-form button:hover {
+      background-color: #0059b3;
+    }
+    .map-container {
+      margin-top: 30px;
+      text-align: center;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      background-color: #003366;
+      color: white;
+      padding: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Hotel Three S Pvt. Ltd</h1> <img src="logo.png" alt="Logo" style="height: 80px;">
+  <nav>
+    <a href="Home.html">Home</a>
+    <a href="Rooms.html">Rooms</a>
+    <a href="Services.html">Services</a>
+    <a href="Book.html">Book Now</a>
+    <a href="Contactus.html">Contact Us</a>
+  </nav>
+</header>
+
+<h2>Contact Us</h2>
+
+<div class="contact-info">
+  <p>If you have any questions, feel free to reach out to us. We are here to assist you.</p>
+ 
+  <p>📞  Phone: 9847554513, 9869848084</p>
+  <p>📧Email: <a href="mailto:info.hotelthree@gmail.com">info.hotelthree@gmail.com</a></p>
+  <p>📍 Address: Banganga-03 rajapani, Kapilvastu Nepal</p>
+</div>
+
+<div class="contact-form">
+  <form action="mailto:info.hotelthree@gmail.com" method="post" enctype="text/plain">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="Name" required>
+
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="Email" required>
+
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="Message" rows="4" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
+<div class="map-container">
+<h3>Our Location</h3>
+<iframe src="https://www.google.com/maps?q=Hotel+Three+S+Pvt+Ltd,+Banganga-03,+Rajapani,+Kapilvastu,+Nepal&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+<footer>
+  <p>&copy; 2025 Hotel Three S Pvt. Ltd. | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

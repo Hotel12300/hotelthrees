@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Now - Hotel Three S</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: linear-gradient(to right, #dbe9f4, #ffffff); padding: 20px; }
+    header { background-color: #003366; color: white; padding: 15px 30px; text-align: center; }
+    nav { margin-top: 10px; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #ffd700; }
+    h2 { text-align: center; margin: 30px 0; color: #003366; }
+    .booking-form { max-width: 700px; background: white; margin: auto; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .booking-form label { display: block; margin: 15px 0 5px; font-weight: bold; color: #003366; }
+    .booking-form input, .booking-form select, .booking-form textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; }
+    .room-options { margin-top: 10px; margin-bottom: 20px; }
+    .room-options label { display: inline-block; background: #f1f1f1; margin: 5px; padding: 8px 12px; border-radius: 6px; }
+    .booking-form button { background-color: #003366; color: white; padding: 12px 20px; border: none; border-radius: 6px; cursor: pointer; margin-top: 20px; width: 100%; font-size: 1rem; }
+    .booking-form button:hover { background-color: #0059b3; }
+    footer { margin-top: 40px; text-align: center; background-color: #003366; color: white; padding: 15px; }
+    hr { margin: 20px 0; border: 1px solid #ccc; }
+    .room-options.hidden { display: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Hotel Three S Pvt. Ltd</h1> <img src="logo.png" alt="Logo" style="height: 80px;">
+  <nav>
+    <a href="Home.html">Home</a>
+    <a href="Rooms.html">Rooms</a>
+    <a href="Services.html">Services</a>
+    <a href="Book.html">Book Now</a>
+    <a href="Contact us.html">Contact Us</a>
+  </nav>
+</header>
+
+<marquee style="color: white; background-color: darkblue; font-size: 24px; font-weight: bold;"><b><i>Book for Stay,</i></b> Hotel Three S Pvt. Ltd</marquee>
+<marquee style="color: yellow; background-color: green; font-size: 24px; font-weight: bold;"><b><i>Book for Stay,</i></b> Hotel Three S Pvt. Ltd</marquee>
+
+<div class="booking-form">
+  <form id="bookingForm">
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="e.g. 9812345678">
+
+    <label for="email">Email (Optional):</label>
+    <input type="email" id="email" name="email">
+
+    <label for="checkin">Check-In Date:</label>
+    <input type="date" id="checkin" name="checkin" required>
+
+    <label for="checkout">Check-Out Date:</label> 
+    <input type="date" id="checkout" name="checkout" required>
+
+    <label for="roomtype">Room Type:</label>
+    <select id="roomtype" name="roomtype" required>
+      <option value="">-- Select Room Type --</option>
+      <option value="deluxe">Deluxe Room - ₹2000</option>
+      <option value="suite">Suite Room - ₹3000</option>
+      <option value="family">Family Deluxe Room - ₹3000</option>
+    </select>
+
+    <hr>
+
+    <div id="deluxeOptions" class="room-options hidden">
+      <label>Deluxe Room Numbers (102–118):</label>
+      <label><input type="checkbox" name="roomnumber" value="102"> 102</label>
+      <label><input type="checkbox" name="roomnumber" value="103"> 103</label>
+      <label><input type="checkbox" name="roomnumber" value="104"> 104</label>
+      <label><input type="checkbox" name="roomnumber" value="105"> 105</label>
+      <label><input type="checkbox" name="roomnumber" value="107"> 107</label>
+      <label><input type="checkbox" name="roomnumber" value="108"> 108</label>
+      <label><input type="checkbox" name="roomnumber" value="109"> 109</label>
+      <label><input type="checkbox" name="roomnumber" value="110"> 110</label>
+      <label><input type="checkbox" name="roomnumber" value="111"> 111</label>
+      <label><input type="checkbox" name="roomnumber" value="112"> 112</label>
+      <label><input type="checkbox" name="roomnumber" value="113"> 113</label>
+      <label><input type="checkbox" name="roomnumber" value="114"> 114</label>
+      <label><input type="checkbox" name="roomnumber" value="115"> 115</label>
+      <label><input type="checkbox" name="roomnumber" value="116"> 116</label>
+      <label><input type="checkbox" name="roomnumber" value="117"> 117</label>
+      <label><input type="checkbox" name="roomnumber" value="118"> 118</label>
+    </div>
+
+    <div id="suiteOptions" class="room-options hidden">
+      <label>Suite Room Numbers:</label>
+      <label><input type="checkbox" name="roomnumber" value="Suite 1"> Suite 1</label>
+      <label><input type="checkbox" name="roomnumber" value="Suite 2"> Suite 2</label>
+    </div>
+
+    <div id="familyOptions" class="room-options hidden">
+      <label>Family Deluxe Room Numbers:</label>
+      <label><input type="checkbox" name="roomnumber" value="101"> 101</label>
+      <label><input type="checkbox" name="roomnumber" value="106"> 106</label>
+    </div>
+
+    <hr>
+
+    <label for="guests">Number of Guests:</label>
+    <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+    <label for="requests">Special Requests (Optional):</label>
+    <textarea id="requests" name="requests" rows="3" placeholder="e.g. Vegetarian dinner, Late check-in..."></textarea>
+
+    <button type="submit">Confirm Booking</button>
+  </form>
+</div>
+
+<footer>
+  <p>&copy; 2025 Hotel Three S Pvt. Ltd. | All Rights Reserved</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init("ehZHUAFY_wPQiNrtU"); // Replace with your EmailJS Public Key if needed
+
+  document.getElementById("roomtype").addEventListener("change", function () {
+    document.querySelectorAll(".room-options").forEach(div => div.classList.add("hidden"));
+    if (this.value === "deluxe") document.getElementById("deluxeOptions").classList.remove("hidden");
+    if (this.value === "suite") document.getElementById("suiteOptions").classList.remove("hidden");
+    if (this.value === "family") document.getElementById("familyOptions").classList.remove("hidden");
+  });
+
+  document.getElementById("bookingForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const formData = {
+      fullname: document.getElementById('fullname').value,
+      phone: document.getElementById('phone').value,
+      email: document.getElementById('email').value, 
+      checkin: document.getElementById('checkin').value,
+      checkout: document.getElementById('checkout').value,
+      roomtype: document.getElementById('roomtype').value,
+      roomnumbers: Array.from(document.querySelectorAll("input[name='roomnumber']:checked")).map(input => input.value).join(", "),
+      guests: document.getElementById('guests').value,
+      requests: document.getElementById('requests').value
+    };
+
+    if (!formData.fullname || !formData.phone || !formData.checkin || !formData.checkout || !formData.roomtype) {
+      alert("Please fill all required fields.");
+      return;
+    }
+
+    emailjs.send('service_jkre9rh', 'template_uj7h9lx', formData)
+      .then(() => {
+        alert(`Thank you, ${formData.fullname}! Your booking has been confirmed.`);
+        window.location.href = "Home.html";
+      })
+      .catch(error => {
+        console.error('EmailJS Error:', error);
+        alert("Sorry, something went wrong. Please try again.");
+      });
+  });
+</script>
+
+</body>
+</html>

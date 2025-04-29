@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Three S - Rooms</title>
+    <style>
+        body{
+
+            background-image: url('threes.jpeg'); /* फोटो फाइल नाम सुधारिएको */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background height:150vh ;
+            background-size: 145%; 
+        }
+         {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('https://source.unsplash.com/1600x600/?hotel-room'); /* तपाईंको होटलको कोठाको फोटो हाल्नुस् */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .room-types {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 40px 20px;
+        }
+        .room {
+            width: 30%;
+            margin: 10px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            overflow: hidden;
+        }
+        .room img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .room-info {
+            padding: 20px;
+        }
+        .room h3 {
+            color: #003366;
+        }
+        .price {
+            color: #e91e63;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .offer {
+            background-color: #ffeb3b;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>Hotel Three S Pvt. Ltd</h1> <img src="logo.png" alt="Logo" style="height: 80px;">
+    </div>
+    <nav>
+        <a href="Home.html">Home</a>
+    <a href="Rooms.html">Rooms</a>
+    <a href="Service.html">Services</a>
+    <a href="Book.html">Book Now</a>
+     <a href="Contact us.html">Contact Us</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <marquee style="color: darkblue; font-size: 24px; font-weight: bold;">Our Comfortable Rooms</marquee>
+</section>
+
+<section class="room-types">
+    <!-- Room 101 and 106 -->
+    <div class="room">
+          <img src="family.jpeg" alt="Room 101" style="width: 100%; height: 200px; object-fit: cover;">
+        <div class="room-info">
+            <h3>Family Deluxe room</h3>
+            <p>Cozy rooms with all modern amenities. Perfect for a comfortable stay.</p>
+            <p class="price">₹3000 per night</p>
+            <p>Facilities: AC, Attached Bathroom, King Size Master Bed, Group Stay, Geyser, Shower, Balcony, Outside View</p>
+        </div>
+    </div>
+    
+    <!-- Other Rooms (2000 charge) -->
+    <div class="room">
+        <img src="delux room.jpeg" alt="Rooms Deluxe" style="width: 100%; height: 200px; object-fit: cover;">
+        <div class="room-info">
+            <h3>Deluxe Room</h3>
+            <p>Comfortable and affordable rooms for budget-conscious travelers.</p>
+            <p class="price">₹2000 per night</p>
+            <p>Facilities: AC, Attached Bathroom, King Size Master Bed, Geyser, Shower, Balcony, Outside View</p>
+        </div>
+    </div>
+
+    <!-- Suite Room -->
+    <div class="room">
+        <img src="suite room.jpeg" alt="Rooms Deluxe" style="width: 100%; height: 200px; object-fit: cover;">
+        <div class="room-info">
+            <h3>Suite Room</h3>
+            <p>Luxury suite with premium services and amazing views.</p>
+            <p class="price">₹3000 per night</p>
+            <p>Facilities: AC, Attached Bathroom, King Size Master Bed, Geyser, Shower, Balcony, Outside View </p>
+        </div>
+    </div>
+</section>
+
+<section class="offer">
+    <h2>Special Offer for  Sunday, Monday, and Tuesday</h2>
+    <p>Stay in a Single Bed Room for only ₹2000 per night, including:</p>
+    <ul>
+        <li>One-night stay in a Single Bed Room</li>
+        <li>Complimentary Veg Khana Set in Dinner</li>
+        <li>Morning Breakfast/Tea/Coffee with a Choose Menu</li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2025 Hotel Three S Pvt. Ltd. | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
